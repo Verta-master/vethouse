@@ -1,0 +1,60 @@
+.btn {
+  width: 271px;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgb(103, 161, 132);
+  border: 2px solid rgba(255,255,255,0);
+  .transition();
+  
+  svg {
+    display: block;
+    margin-left: 20px;
+    width: 8px;
+    height: 12px;
+    fill: #fff;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    color: @green;
+    background-color: #fff;
+    border: 2px solid rgb(77, 148, 113);
+    .transition();
+    
+    svg {
+      fill: @green;
+      .transition();
+    }
+  }
+  
+  &--white {
+    color: @green;
+    border: 2px solid rgb(77, 148, 113);
+    background-color: #fff;
+    
+    svg {
+      fill: @green;
+      .transition();
+    }
+    
+    &:hover,
+    &:active {
+      color: #fff;
+      background-color: rgb(77, 148, 113);
+      .transition();
+
+      svg {
+        fill: #fff;
+        .transition();
+      }
+    }
+  }
+}
