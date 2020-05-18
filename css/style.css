@@ -1114,3 +1114,77 @@ h2,
   color: #4d9471;
   text-decoration: underline;
 }
+.footer {
+  padding-top: 35px;
+  padding-bottom: 80px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #4d9471;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__block address {
+  display: block;
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+}
+.footer__comment {
+  display: block;
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 22px;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__item {
+  margin-bottom: 22px;
+}
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+.footer__item a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__item a:hover,
+.footer__item a:active {
+  text-decoration: underline;
+}
+.footer__mail,
+.footer__phone {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+.footer__mail:hover,
+.footer__phone:hover,
+.footer__mail:active,
+.footer__phone:active {
+  text-decoration: underline;
+}
+.footer__phone {
+  font-weight: 700;
+}
