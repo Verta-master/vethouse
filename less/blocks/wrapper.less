@@ -5,3 +5,26 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.link {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 1;
+  color: @green;
+  
+  &::after {
+    content: "";
+    width: 7px;
+    height: 13px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../img/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

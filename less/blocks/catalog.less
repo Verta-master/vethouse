@@ -16,6 +16,8 @@
 .catalog__item {
   position: relative;
   width: 285px;
+  display: flex;
+  flex-direction: column;
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -68,15 +70,25 @@
 }
 
 .catalog__price {
-  
+  margin-top: auto;
 }
 
 .catalog__newprice {
-  
+  display: inline-block;
+  vertical-align: baseline;
+  color: #4d9471;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .catalog__oldprice {
-  
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #919191;
+  text-decoration: line-through;
 }
 
 .catalog__labels {
@@ -88,6 +100,15 @@
   color: #d99012;
 }
 
-.catalog__label {
-  
+.catalog__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+  border-bottom: 1px dotted #e6e6e6;
+}
+
+.catalog__btn {
+  margin-left: 25px;
+  margin-right: 25px;
 }
