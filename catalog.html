@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper header__wrap">
+        <a href="tel:+78003331124" class="header__phone">8 800 333-11-24</a>
+        <div class="header__user">
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="header__call">Обратный звонок</a>
+          <a href="#" class="header__basket">Корзина <b>(3)</b></a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="header__bottom">
+        <a href="index.html" class="logo">
+          <img src="img/images/logo.png" alt="Logo">
+        </a>
+        <a href="#" class="header__shop"><span>3</span></a>
+        <div class="search">
+          <button type="button" class="search__open"></button>
+          <form action="#" class="search__form">
+            <input type="text" class="search__input" placeholder="Поиск">
+            <button type="submit" class="search__btn">
+              <svg width="18.219" height="18.218" viewBox="0 0 18.219 18.218">
+                <path d="M868.022,127.461l-5.293-5.293a7.219,7.219,0,1,0-1.073,1.074l5.292,5.292a0.38,0.38,0,0,0,.537,0l0.537-.537A0.379,0.379,0,0,0,868.022,127.461Zm-10.9-4.129a5.694,5.694,0,1,1,5.693-5.694A5.7,5.7,0,0,1,857.126,123.332Z" transform="translate(-849.906 -110.438)"></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <nav class="menu">
+          <button type="button" class="menu__btn"></button>
+          <div class="menu__wrap">
+            <button type="button" class="menu__close"></button>
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="#" class="menu__link">Каталог</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Статьи</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Доставка и оплата</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="wrapper wrapper--internal">
+      <h1 class="title-2">Каталог</h1>
+      <div class="wrapper__columns">
+        <aside class="sidebar">
+          <button type="button" class="sidebar__btn">Фильтр</button>
+          <nav class="sidebar__menu">
+            <ul class="sidebar__list">
+              <li class="sidebar__item"><a href="#">Ветмедин</a></li>
+              <li class="sidebar__item"><a href="#">Бонхарен и Хиовет</a></li>
+              <li class="sidebar__item"><a href="#">Веторил</a></li>
+              <li class="sidebar__item"><a href="#">Иммитицид</a></li>
+              <li class="sidebar__item sidebar__item--active"><a href="#">Витамин К1 (Конакион)</a></li>
+              <li class="sidebar__item"><a href="#">Ализин</a></li>
+              <li class="sidebar__item"><a href="#">Масивет</a></li>
+              <li class="sidebar__item"><a href="#">Другие лекарства</a></li>
+            </ul>
+            <div class="sidebar__slider">
+              <p class="sidebar__title">Цена:</p>
+              <div class="sidebar__range">
+                <div id="slider-range"></div>
+              </div>
+              <div class="sidebar__wrap">
+                <input type="text" id="amount-min" class="sidebar__input">
+                <input type="text" id="amount-max" class="sidebar__input">
+              </div>
+            </div>
+          </nav>
+        </aside>
+        
+        <div class="wrapper__content">
+          <section class="catalog">
+            <div class="catalog__sorting">
+              <span>Сортировать:</span>
+              <select class="catalog__select">
+                <option value="1" selected="">по популярности</option>
+                <option value="2">по новизне</option>
+                <option value="3">по цене</option>
+              </select>
+            </div>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <figure class="catalog__img">
+                    <img src="img/images/img-1.jpg" alt="Выбор покупателей">
+                  </figure>
+                  <span class="catalog__text">1,25 мг. 100 таблеток</span>
+                  <p class="catalog__title">Таблетки Ветмедин</p>
+                </a>
+                <form action="#" class="catalog__form">
+                  <div class="catalog__price">
+                    <p class="catalog__newprice">3 700 ₽</p>
+                    <p class="catalog__oldprice">3 900 руб.</p>
+                  </div>
+                  <a href="#" class="btn btn--white catalog__shop">Добавить в корзину</a>
+                </form>
+              </li>
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <figure class="catalog__img">
+                    <img src="img/images/img-2.jpg" alt="Выбор покупателей">
+                  </figure>
+                  <span class="catalog__text">50 мг. + 10 мл</span>
+                  <p class="catalog__title">Иммитицид (Меларсомин) (Merial Spa, Франция)</p>
+                </a>
+                <form action="#" class="catalog__form">
+                  <div class="catalog__price">
+                    <p class="catalog__newprice">35 000 ₽</p>
+                    <p class="catalog__oldprice"></p>
+                  </div>
+                  <a href="#" class="btn btn--white catalog__shop">Добавить в корзину</a>
+                </form>
+              </li>
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <figure class="catalog__img">
+                    <img src="img/images/img-3.jpg" alt="Выбор покупателей">
+                  </figure>
+                  <div class="catalog__labels">
+                    <span class="catalog__label">Нет в наличии</span>
+                  </div>
+                  <span class="catalog__text">100 мг.  60 таблеток</span>
+                  <p class="catalog__title">Витамин К1 Фитоменадион Конакион в таблетках</p>
+                </a>
+                <form action="#" class="catalog__form">
+                  <div class="catalog__price">
+                    <p class="catalog__newprice">4 900 ₽</p>
+                    <p class="catalog__oldprice"></p>
+                  </div>
+                  <a href="#" class="btn btn--white catalog__shop">Добавить в корзину</a>
+                </form>
+              </li>
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <figure class="catalog__img">
+                    <img src="img/images/img-4.jpg" alt="Выбор покупателей">
+                  </figure>
+                  <span class="catalog__text">1,25 мг. 100 капсул</span>
+                  <p class="catalog__title">Капсулы Ветмедин</p>
+                </a>
+                <form action="#" class="catalog__form">
+                  <div class="catalog__price">
+                    <p class="catalog__newprice">3 200 руб.</p>
+                    <p class="catalog__oldprice">4 000 руб.</p>
+                  </div>
+                  <a href="#" class="btn btn--white catalog__shop">Добавить в корзину</a>
+                </form>
+              </li>
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <figure class="catalog__img">
+                    <img src="img/images/img-1.jpg" alt="Выбор покупателей">
+                  </figure>
+                  <span class="catalog__text">1,25 мг. 100 таблеток</span>
+                  <p class="catalog__title">Таблетки Ветмедин</p>
+                </a>
+                <form action="#" class="catalog__form">
+                  <div class="catalog__price">
+                    <p class="catalog__newprice">3 700 ₽</p>
+                    <p class="catalog__oldprice">3 900 руб.</p>
+                  </div>
+                  <a href="#" class="btn btn--white catalog__shop">Добавить в корзину</a>
+                </form>
+              </li>
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <figure class="catalog__img">
+                    <img src="img/images/img-2.jpg" alt="Выбор покупателей">
+                  </figure>
+                  <span class="catalog__text">50 мг. + 10 мл</span>
+                  <p class="catalog__title">Иммитицид (Меларсомин) (Merial Spa, Франция)</p>
+                </a>
+                <form action="#" class="catalog__form">
+                  <div class="catalog__price">
+                    <p class="catalog__newprice">35 000 ₽</p>
+                    <p class="catalog__oldprice"></p>
+                  </div>
+                  <a href="#" class="btn btn--white catalog__shop">Добавить в корзину</a>
+                </form>
+              </li>
+            </ul>
+          </section>
+
+          <section class="info">
+            <p class="title-2">Купить Конакион (Витамин К1)</p>
+            <p>Конакион, Витамин К1, Фитоменадион, Филлохинон - альтернативные названия одного и того же вещества.</p>
+            <p>Витамин К1 – фармакологический препарат, применяющийся для лечения отравлений собак крысиными ядами или родентицидами. Родентициды – токсические вещества, которые используют для борьбы с грызунами. Крысиный яд угнетает кроветворную функцию у собак, приводит к массивным кровотечениям. Нейтрализовать токсическое влияние можно только с помощью витамина К1. Международное название медикамента – Фитоменадион. Также известен как Конакион.</p>
+            <p class="title-2">Общая характеристика препарата</p>
+            <p>Витамин К1 – искусственно синтезированное вещество. Химическая структура аналогична витамину К у млекопитающих.</p>
+            <p>Фитоменадион для ветеринарного применения выпускается в различных формах. Для инъекций используется раствор Витамина К1. Внутрь лекарство дается в виде таблеток. В каталоге представлены обе формы препарата, рассчитать дозировку можно для любой весовой категории. Мы хорошо понимаем насколько срочно может понадобиться препарат для спасения жизни животного, поэтому Конакион можно купить в Москве со срочной доставкой день-в-день, так же можно заказать срочную отправку в регионы. В большинстве городов вы сможете получить препарат уже на следующий день.</p>
+            <p>Хранение препарата не требует особых условий: отлично подойдет комнатная температура и отсутствие прямых</p>
+            <p class="title-2">Чем опасно отравление крысиным ядом</p>
+            <p>Токсические вещества для борьбы с грызунами попадают в организм собаки случайно или преднамеренно. Питомец проглатывает привлекательную на вид приманку, разбросанную коммунальными службами, догхантерами или даже соседями. Догхантеры – преступники, уничтожающие собак специально из ненависти. Злоумышленником может оказаться сосед, которому мешает лай или он просто боится собак. А коммунальные службы периодически проводят дератизацию подвалов и домовых подсобных помещений.</p>
+            <p>Яд может содержаться в мелком животном – птице или крысе, - за которыми охотится собака.</p>
+            <p>Масштаб последствий зависит от дозы и вида родентицида. Родентициды 1-го поколения менее токсичны, выводятся из организма за несколько суток. Яды 2-го поколения действуют более активно, период выведения достигает 24 суток.</p>
+            <p>Механизм действия отравляющих веществ заключается в блокировке эндогенного (внутреннего) витамина К1. Этот витамин поступает с пищей, а также в небольшом количестве синтезируется организмом собаки. Биологическая роль витамина К1 – участие в синтезе факторов свертывания (коагуляции) крови в печени. Кроме того, способствует превращению протромбина в тромбин, необходимого для образования сгустков крови при кровотечениях.</p>
+            <p>Крысиный яд мешает витамину К1 вступать в биохимические реакции. Некоторое время внутренних запасов факторов коагуляции хватает, чтоб процессы свертывания крови протекали в привычном ритме. Постепенно депо истощается, кровь перестает сворачиваться, появляются кровотечения.</p>
+            <p class="title-2">Первая помощь при отравлении собаки крысиным ядом</p>
+            <p>К сожалению, владельцы не всегда сразу замечают, что собака проглотила что-то на улице.</p>
+            <p>Если же подобное действие произошло на глазах хозяина, то срочно нужно вызвать рвоту, чтоб удалить максимальное количество возможного яда. Для очищения желудка дают подсоленную воду, заливая в пасть с помощью шприца или резиновой спринцовки. Затем нажимают на корень языка для стимуляции рвотного рефлекса. Используют абсорбирующие вещества типа активированного угля или энтеросгеля.</p>
+            <p>Промывание проводят только собакам, находящимся в полном сознании. Если сознание нарушено, заметны признаки нарушения дыхания, процедура противопоказана из-за риска попадания рвотных масс в дыхательные пути.</p>
+            <p>Даже если эпизод с проглатываением крысиного яда остался незамеченным, симптомы не заставят себя долго ждать. В первую очередь собака становится вялой после прогулки, и это уже повод обратить внимание на самочувствие животного. Заподозрив отравление крысиным ядом, заметив любые из симптомов, медлить нельзя. Нужно сделать промывание желудка и вколоть Конакион, он всегда должен быть в аптечке.  Собака срочно должна быть доставлена в ветеринарную клинику для выведения токсина и восстановления жизненных функций. Родентициды полностью блокируют свертывающую способность крови. Промедление с оказанием квалифицированной помощи приведет к тому, что питомец истечет кровью.</p>
+            <p>До прибытия к доктору, самостоятельно дают питомцу Фитоменадион, рассчитав дозировку. Препарат безопасен даже при превышении дозы. Важно как можно раньше начать терапию антидотом. Противоядие только одно – Витамин К1.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__wrap">
+        <div class="footer__block">
+          <div class="footer__logo">
+            <img src="img/images/logo-footer.png" alt="Logo">
+          </div>
+          <span class="footer__comment">© 2012 - 2020, “Vet house”<br>Медицинские препараты для животных</span>
+        </div>
+        <div class="footer__block">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Каталог</a></li>
+            <li class="footer__item"><a href="#">Главная</a></li>
+            <li class="footer__item"><a href="#">Новости</a></li>
+            <li class="footer__item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Доставка и оплата</a></li>
+            <li class="footer__item"><a href="#">Отзывы</a></li>
+            <li class="footer__item"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <a href="tel:+78003331124" class="footer__phone">8 800 333-11-24</a>
+          <a href="mailto:info@vet-house.com" class="footer__mail">info@vet-house.com</a>
+          <address>Адрес: 1117418, г.Москва,<br>ул. Профсоюзная д. 39</address>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+  
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/range.js"></script>
+</body>
+</html>
