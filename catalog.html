@@ -25,17 +25,20 @@
         <a href="index.html" class="logo">
           <img src="img/images/logo.png" alt="Logo">
         </a>
-        <a href="#" class="header__shop"><span>3</span></a>
+        <a href="#" class="header__shop">(3)</a>
         <div class="search">
           <button type="button" class="search__open"></button>
-          <form action="#" class="search__form">
-            <input type="text" class="search__input" placeholder="Поиск">
-            <button type="submit" class="search__btn">
-              <svg width="18.219" height="18.218" viewBox="0 0 18.219 18.218">
-                <path d="M868.022,127.461l-5.293-5.293a7.219,7.219,0,1,0-1.073,1.074l5.292,5.292a0.38,0.38,0,0,0,.537,0l0.537-.537A0.379,0.379,0,0,0,868.022,127.461Zm-10.9-4.129a5.694,5.694,0,1,1,5.693-5.694A5.7,5.7,0,0,1,857.126,123.332Z" transform="translate(-849.906 -110.438)"></path>
-              </svg>
-            </button>
-          </form>
+          <div class="search__wrap">
+            <form action="#" class="search__form">
+              <input type="text" class="search__input" placeholder="Поиск">
+              <button type="submit" class="search__btn">
+                <svg width="18.219" height="18.218" viewBox="0 0 18.219 18.218">
+                  <path d="M868.022,127.461l-5.293-5.293a7.219,7.219,0,1,0-1.073,1.074l5.292,5.292a0.38,0.38,0,0,0,.537,0l0.537-.537A0.379,0.379,0,0,0,868.022,127.461Zm-10.9-4.129a5.694,5.694,0,1,1,5.693-5.694A5.7,5.7,0,0,1,857.126,123.332Z" transform="translate(-849.906 -110.438)"></path>
+                </svg>
+              </button>
+            </form>
+            <button type="button" class="search__close">Отмена</button>
+          </div>
         </div>
         <nav class="menu">
           <button type="button" class="menu__btn"></button>
@@ -58,6 +61,10 @@
                 <a href="#" class="menu__link">Контакты</a>
               </li>
             </ul>
+            <div class="menu__mobile">
+              <a href="tel:+78003331124" class="header__phone">8 800 333-11-24</a>
+              <a data-fancybox="" data-src="#call" href="javascript:;" class="header__call">Обратный звонок</a>
+            </div>
           </div>
         </nav>
       </div>
@@ -236,13 +243,13 @@
   <footer class="footer">
     <div class="wrapper">
       <div class="footer__wrap">
-        <div class="footer__block">
+        <div class="footer__block footer__block--logo">
           <div class="footer__logo">
             <img src="img/images/logo-footer.png" alt="Logo">
           </div>
           <span class="footer__comment">© 2012 - 2020, “Vet house”<br>Медицинские препараты для животных</span>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--menu">
           <ul class="footer__list">
             <li class="footer__item"><a href="#">Каталог</a></li>
             <li class="footer__item"><a href="#">Главная</a></li>
@@ -250,16 +257,18 @@
             <li class="footer__item"><a href="#">Контакты</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--faq">
           <ul class="footer__list">
             <li class="footer__item"><a href="#">Доставка и оплата</a></li>
             <li class="footer__item"><a href="#">Отзывы</a></li>
             <li class="footer__item"><a href="#">FAQ</a></li>
           </ul>
         </div>
-        <div class="footer__block">
-          <a href="tel:+78003331124" class="footer__phone">8 800 333-11-24</a>
-          <a href="mailto:info@vet-house.com" class="footer__mail">info@vet-house.com</a>
+        <div class="footer__block footer__block--contacts">
+          <div class="footer__contacts">
+            <a href="tel:+78003331124" class="footer__phone">8 800 333-11-24</a>
+            <a href="mailto:info@vet-house.com" class="footer__mail">info@vet-house.com</a>
+          </div>
           <address>Адрес: 1117418, г.Москва,<br>ул. Профсоюзная д. 39</address>
         </div>
       </div>
@@ -284,6 +293,7 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
