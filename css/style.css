@@ -1710,7 +1710,7 @@ h2,
     position: relative;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 65px;
+    padding-top: 60px;
   }
   .footer__block--logo {
     -webkit-box-ordinal-group: 5;
@@ -1756,7 +1756,7 @@ h2,
   }
   .footer__contacts {
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
   }
   .footer__mail,
@@ -1765,20 +1765,24 @@ h2,
     line-height: 16px;
   }
   .footer__item {
-    margin-bottom: 5px;
+    margin-bottom: 0;
+  }
+  .footer__item a {
+    display: block;
     font-size: 12px;
     line-height: 20px;
   }
 }
 @media (max-width: 599px) {
   .promo {
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 30px;
     background-image: url(../img/images/bg-mobile.jpg);
   }
   .promo__title {
-    font-size: 24px;
-    line-height: 32px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .promo__subtitle {
     max-width: 165px;
@@ -1791,32 +1795,40 @@ h2,
     font-size: 12px;
     border-radius: 5px;
   }
+  .btn svg {
+    height: 8px;
+    width: auto;
+    margin-left: 10px;
+  }
   .promo__btn {
-    margin-top: 30px;
+    margin-top: 27px;
   }
   .benefits__item {
+    margin-bottom: 25px;
     font-size: 12px;
     line-height: 16px;
   }
   .benefits__icon {
     height: 48px;
+    margin-bottom: 15px;
   }
   .benefits__icon img {
     max-height: 48px;
     width: auto;
   }
   .benefits__list {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 25px;
   }
   .title {
     font-size: 22px;
     line-height: 1.2;
   }
-  .catalog {
-    padding-top: 5px;
+  .catalog .title {
+    margin-top: 0;
   }
   .catalog__list {
-    margin-top: 40px;
+    margin-top: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1836,26 +1848,42 @@ h2,
     max-height: 110px;
   }
   .catalog__text {
+    display: block;
     font-size: 9px;
     line-height: 12px;
   }
   .catalog__title {
+    margin-bottom: 5px;
     font-size: 10px;
     line-height: 12px;
   }
+  .catalog__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .catalog__newprice {
+    display: block;
     font-size: 12px;
   }
   .catalog__oldprice {
+    display: block;
     font-size: 9px;
     margin-left: 10px;
   }
   .catalog__shop {
-    width: 131px;
-    height: 21px;
-    margin-top: 12px;
+    width: 135px;
+    height: 23px;
+    max-width: 100%;
+    margin-top: 10px;
     font-size: 9px;
     border-width: 1px;
+    border-radius: 3px;
   }
   .catalog__labels {
     top: 0;
@@ -1872,17 +1900,22 @@ h2,
   }
   .catalog__btns {
     margin-top: 0;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
   .scheme {
-    padding-top: 5px;
+    padding-top: 20px;
     padding-bottom: 5px;
   }
+  .scheme .title {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
   .scheme__list {
-    margin-top: 35px;
+    margin-top: 0;
   }
   .scheme__item {
     width: 50%;
+    margin-bottom: 12px;
   }
   .scheme__text {
     width: calc(100% - 40px);
@@ -1900,7 +1933,7 @@ h2,
     width: 35px;
   }
   .about {
-    padding-top: 270px;
+    padding-top: 245px;
     padding-bottom: 0;
     background-image: url(../img/images/bg-1mobile.jpg);
     background-position: top center;
@@ -1910,17 +1943,17 @@ h2,
     color: #4d9471;
   }
   .about__text {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 12px;
     line-height: 18px;
     border-bottom: 1px dotted #e6e6e6;
   }
   .blog {
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .blog .title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
   }
   .link {
@@ -1962,5 +1995,35 @@ h2,
   .blog__more {
     font-size: 12px;
     line-height: 18px;
+  }
+  .modal {
+    padding: 25px 15px;
+  }
+  .modal__title {
+    color: #4d9471;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .form__label {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .form__input {
+    height: 34px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+  }
+  .form__btns {
+    margin-top: 20px;
+  }
+  .form__cancel {
+    display: none;
+  }
+  .form__btn {
+    width: 100%;
+  }
+  .menu__btn,
+  .search {
+    margin-left: 5px;
   }
 }
