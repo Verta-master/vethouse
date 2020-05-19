@@ -448,7 +448,19 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-  
+    <p class="modal__title">Обратный звонок</p>
+    <form action="#" class="form">
+      <label for="name" class="form__label">Имя</label>
+      <input type="text" id="name" class="form__input">
+      <label for="surname" class="form__label">Фамилия</label>
+      <input type="text" id="surname" class="form__input">
+      <label for="tel" class="form__label">Телефон</label>
+      <input type="tel" id="tel" class="form__input">
+      <div class="form__btns">
+        <a href="#" class="form__cancel">Отмена</a>
+        <button type="submit" class="btn form__btn">Отправить</button>
+      </div>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>

@@ -1433,6 +1433,67 @@ h2,
   margin-top: 65px;
   color: #4d9471;
 }
+.modal {
+  width: 453px;
+  max-width: 100%;
+  padding: 35px 85px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: -1.389px 7.878px 63px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -1.389px 7.878px 63px 0px rgba(0, 0, 0, 0.1);
+}
+.modal__title {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+.fancybox-close-small {
+  color: #cdcdcd;
+}
+.form__label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.form__btns {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__cancel {
+  font-size: 14px;
+  color: #cccccc;
+  text-decoration: none;
+}
+.form__cancel:hover,
+.form__cancel:active {
+  color: #4d9471;
+  text-decoration: underline;
+}
+.form__btn {
+  width: 189px;
+  height: 53px;
+  font-size: 14px;
+  border-radius: 5px;
+}
 @media (max-width: 1230px) {
   .wrapper {
     width: 100%;
