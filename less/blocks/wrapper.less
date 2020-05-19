@@ -1,9 +1,33 @@
 .wrapper {
-  width: 1250px;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  
+  &--internal {
+    padding-top: 30px;
+  }
+}
+
+.wrapper__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 25px;
+  
+  .catalog {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+  .catalog__list {
+    margin-top: 0;
+  }
+}
+
+.wrapper__content {
+  width: ~"calc(100% - 300px)";
 }
 
 .link {

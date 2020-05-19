@@ -72,7 +72,7 @@
   .transition();
 }
 
-.catalog__price {
+.catalog__form {
   margin-top: auto;
 }
 
@@ -117,4 +117,50 @@
 .catalog__btn {
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.catalog__sorting {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 275px;
+  margin-left: auto;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #cccccc;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.catalog__select {
+  display: block;
+  width: 175px;
+  height: 40px;
+  padding-left: 15px;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  appearance: none;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 13px 7px;
+  outline: none;
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.catalog__shop {
+  height: 45px;
+  margin-top: 20px;
+  font-size: 15px;
+  border-width: 2px;
+  border-radius: 5px;
 }

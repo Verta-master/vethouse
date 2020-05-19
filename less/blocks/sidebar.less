@@ -1,0 +1,141 @@
+.sidebar {
+  width: 270px;
+}
+
+.sidebar__btn {
+  display: none;
+}
+
+.sidebar__list {
+  .reset();
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.sidebar__item {
+  margin-bottom: 13px;
+  
+  a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:active,
+  &--active {
+    a {
+      color: @green;
+      text-decoration: underline;
+    }
+  }
+}
+
+.sidebar__slider {
+  max-width: 205px;
+}
+
+.sidebar__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: @green;
+}
+
+.sidebar__wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 2px;
+    background-color: rgb(204, 204, 204);
+  }
+}
+
+.sidebar__input {
+  width: 80px;
+  height: 40px;
+  display: block;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 15px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 3px;
+  background-image: url(../img/icons/rouble.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: right 10px center;
+  overflow: hidden;
+}
+
+.sidebar__range {
+  .ui-slider {
+    position: relative;
+  }
+  /* Ползунок */
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 0;
+    background-image: url(../img/icons/handler.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 8px 10px;
+    cursor: pointer;
+    outline: none;
+  }
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+  }
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  .ui-slider-horizontal {
+    height: 4px;
+  }
+  /* позиционируем ползунки */
+  .ui-slider-horizontal .ui-slider-handle { 
+    top: 4px;
+    margin-left: -8px;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+  }
+  .ui-slider-horizontal .ui-slider-range-min { 
+    left: 0;
+  }
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+  /* оформление полосы по которой ходит ползунок */
+  .ui-widget-content { 
+    border: 1px solid rgb(51, 51, 51);
+    background-color: rgb(51, 51, 51);
+  }
+  /* оформление активного участка (между двумя ползунками) */
+  .ui-widget-header { 
+    border: 1px solid rgb(77, 148, 113);
+    background-color: rgb(77, 148, 113);
+  }
+  /* скругление для полосы слайдера */
+  .ui-corner-all {
+    border-radius: 2px;
+  }
+  .ui-widget.ui-widget-content {
+    border: 0;
+  }
+}
