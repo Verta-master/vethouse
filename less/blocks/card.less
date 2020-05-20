@@ -1,0 +1,177 @@
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  border-bottom: 1px dotted #e6e6e6;
+}
+
+.card__pic {
+  position: relative;
+  width: 440px;
+  height: 322px;
+  border: 1px solid rgb(237, 237, 237);
+  border-radius: 20px;
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    bottom: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/zoom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+  }
+}
+
+.card__info {
+  width: 50%;
+  padding-right: 20px;
+  
+  .title-2 {
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
+  
+  p {
+    font-size: 15px;
+    
+    a {
+      color: #333;
+      text-decoration: none;
+      
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 300px;
+  }
+}
+
+.card__checks {
+  margin-bottom: 30px;
+}
+
+.card__checkbox {
+  display: none;
+}
+
+.card__label {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15px;
+  margin-right: 5px;
+  color: #bfbfbf;
+  font-size: 13px;
+  line-height: 30px;
+  border: 1px solid rgb(237, 237, 237);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card__checkbox:checked + .card__label {
+  color: #fff;
+  background-color: @green;
+  border-color: @green;
+}
+
+.card__price {
+  margin-bottom: 28px;
+}
+
+.card__newprice {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  color: @green;
+  line-height: 1;
+}
+
+.card__oldprice {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 1;
+  color: #d10000;
+  text-decoration: line-through;
+}
+
+.card__btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.card__btn {
+  margin-right: 30px;
+}
+
+.card__number {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  
+  span {
+    margin-right: 15px;
+  }
+}
+
+.card__nums {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 5px;
+}
+
+.card__num {
+  width: 27px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  border-radius: 5px;
+  background-color: rgb(232, 232, 232);
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: @green;
+    .transition();
+  }
+}
+
+.card__value {
+  width: 45px;
+  height: 33px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+}
