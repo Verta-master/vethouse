@@ -72,12 +72,21 @@
   </header>
   
   <main>
-    <div class="wrapper wrapper--internal">
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+        <span class="breadcrumbs__link">Ветмедин</span>
+      </div>
+    </nav>
+    
+    <div class="wrapper">
       <h1 class="title-2">Каталог</h1>
       <div class="wrapper__columns">
         <aside class="sidebar">
-          <button type="button" class="sidebar__btn">Фильтр</button>
+          <button type="button" class="btn sidebar__btn">Бренды</button>
           <nav class="sidebar__menu">
+            <button type="button" class="sidebar__close"></button>
             <ul class="sidebar__list">
               <li class="sidebar__item"><a href="#">Ветмедин</a></li>
               <li class="sidebar__item"><a href="#">Бонхарен и Хиовет</a></li>
@@ -298,5 +307,17 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="js/range.js"></script>
+  
+  <!-- Sidebar -->
+  <script>
+    if (window.innerWidth < 1022) {
+      $('.sidebar__btn').click(function() {
+        $('.sidebar__menu').slideDown();
+      });
+      $('.sidebar__close').click(function() {
+        $('.sidebar__menu').slideUp();
+      });
+    }
+  </script>
 </body>
 </html>
