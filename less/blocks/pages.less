@@ -1,0 +1,47 @@
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.pages__link {
+  width: 40px;
+  height: 40px;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0);
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @green;
+    border-color: @green;
+    .transition();
+  }
+  
+  &--prev,
+  &--next {
+    font-size: 20px;
+    color: rgb(209, 209, 209);
+    border: 1px solid rgb(209, 209, 209);
+  }
+  
+  &--hidden {
+    display: none;
+  }
+}
+
+span.pages__link {
+  color: #fff;
+  background-color: rgb(77, 148, 113);
+}
