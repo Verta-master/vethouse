@@ -1731,6 +1731,9 @@ span.breadcrumbs__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .tabs__title .ui-tabs-active a {
   border-color: #67a184;
@@ -1745,6 +1748,7 @@ span.breadcrumbs__link {
   font-weight: 700;
   line-height: 1;
   color: #4d9471;
+  text-align: center;
   text-decoration: none;
   border: 2px solid rgba(255, 255, 255, 0);
   border-radius: 35px;
@@ -1939,6 +1943,15 @@ span.breadcrumbs__link {
   .header__call::before {
     background-image: url(../img/icons/phone-white.svg);
   }
+  .card__info {
+    padding-right: 0;
+  }
+  .card__number span {
+    display: none;
+  }
+  .tabs__name {
+    margin-right: 0;
+  }
 }
 @media (max-width: 1022px) {
   .scheme__list {
@@ -2014,6 +2027,25 @@ span.breadcrumbs__link {
     background-repeat: no-repeat;
     background-size: 11px 11px;
     background-position: center;
+  }
+  .card__wrap {
+    display: block;
+    padding-top: 0;
+  }
+  .card__pic {
+    border: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .card__pic::before {
+    display: none;
+  }
+  .card__info {
+    width: 100%;
+  }
+  .tabs__name a {
+    padding: 10px 20px;
   }
 }
 @media (max-width: 766px) {
@@ -2095,6 +2127,9 @@ span.breadcrumbs__link {
     display: block;
     font-size: 12px;
     line-height: 20px;
+  }
+  .tabs__name a {
+    font-size: 9px;
   }
 }
 @media (max-width: 599px) {
@@ -2399,5 +2434,48 @@ span.breadcrumbs__link {
   }
   .info .title-2 {
     margin-top: 30px;
+  }
+  .card__info .title-2 {
+    color: #333;
+  }
+  .card__label {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  .card__newprice {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .card__oldprice {
+    display: block;
+    font-size: 12px;
+  }
+  .card__btns {
+    position: relative;
+  }
+  .card__btn {
+    width: 100%;
+    margin-right: 0;
+  }
+  .card__number {
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+  .tabs__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs__name {
+    width: 100%;
+  }
+  .tabs__field {
+    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
   }
 }
