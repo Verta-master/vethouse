@@ -1925,6 +1925,12 @@ span.pages__link {
   color: #fff;
   background-color: #4d9471;
 }
+.basket {
+  padding-bottom: 45px;
+}
+.basket .title {
+  margin-bottom: 50px;
+}
 .basket__block {
   width: 100%;
   margin-bottom: 35px;
@@ -1937,7 +1943,7 @@ span.pages__link {
 .basket__block--data {
   padding: 40px 35px;
   padding-right: 65px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .basket__table {
   width: 100%;
@@ -2068,8 +2074,8 @@ span.pages__link {
   position: absolute;
   top: 7px;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 1px solid #cccccc;
   border-radius: 50%;
 }
@@ -2077,8 +2083,8 @@ span.pages__link {
   display: none;
   content: "";
   position: absolute;
-  top: 11px;
-  left: 4px;
+  top: 12px;
+  left: 5px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -2099,6 +2105,10 @@ span.pages__link {
   border: 0;
   width: 50%;
   padding-right: 30px;
+}
+.basket__field .form__message,
+.basket__field .form__input {
+  margin-bottom: 20px;
 }
 .basket__wrap {
   display: -webkit-box;
@@ -2122,7 +2132,8 @@ span.pages__link {
 .basket__total {
   width: 400px;
   max-width: 100%;
-  padding: 40px 30px;
+  margin-top: 10px;
+  padding: 45px 30px;
   border: 2px solid #4d9471;
   border-radius: 20px;
   -webkit-box-shadow: -1.389px 7.878px 63px 0px rgba(0, 0, 0, 0.1);
@@ -2328,6 +2339,23 @@ span.pages__link {
   .tabs__name {
     margin-right: 0;
   }
+  .basket__table td:nth-child(2) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .basket__table .card__number {
+    width: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .basket__delivery span,
+  .basket__label {
+    max-width: 750px;
+  }
+  .basket__block--data {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 @media (max-width: 1022px) {
   .scheme__list {
@@ -2434,6 +2462,72 @@ span.pages__link {
   .news__info {
     width: 100%;
     margin-top: 20px;
+  }
+  .basket__table,
+  .basket__table tbody,
+  .basket__table td {
+    display: block;
+  }
+  .basket__table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #e6e6e6;
+  }
+  .basket__table td {
+    padding: 0;
+    border-bottom: 0;
+  }
+  .basket__wrap,
+  .basket__table .card__number span {
+    display: block;
+  }
+  .basket__table td:first-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .basket__table td:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: calc(100% - 180px);
+  }
+  .basket__table td:nth-child(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .basket__table td:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .basket__table td:nth-child(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .basket__delivery span,
+  .basket__label {
+    max-width: 500px;
+  }
+  .basket__columns {
+    width: 100%;
+  }
+  .basket__total {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 766px) {
@@ -2899,5 +2993,130 @@ span.pages__link {
     width: 30px;
     height: 30px;
     font-size: 12px;
+  }
+  .basket__block {
+    width: 100vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .basket__img {
+    width: 100px;
+    height: auto;
+  }
+  .basket__title {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .basket__comment {
+    font-size: 9px;
+  }
+  .basket__table td:nth-child(2) {
+    width: calc(100% - 100px);
+  }
+  .basket__table tr {
+    position: relative;
+  }
+  .basket__table td:nth-child(5) {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 5;
+  }
+  .basket__remove {
+    width: 25px;
+    height: 25px;
+    background-size: 12px 12px;
+  }
+  .basket__table .card__number {
+    position: static;
+    padding: 0;
+  }
+  .basket__table .card__number span {
+    font-size: 9px;
+  }
+  .basket__table .card__number .card__num {
+    width: 22px;
+  }
+  .basket__table .card__number .card__value {
+    width: 35px;
+    font-size: 12px;
+  }
+  .basket__price {
+    width: 100px;
+    font-size: 20px;
+  }
+  .basket__delivery {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .basket__delivery td:last-child {
+    width: 70px;
+    text-align: right;
+  }
+  .basket__delivery th:last-child {
+    width: 0;
+    font-size: 0;
+  }
+  .basket__delivery td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .basket__delivery th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 0;
+  }
+  .basket__label {
+    padding-left: 20px;
+  }
+  .basket__label::before {
+    width: 13px;
+    height: 13px;
+    top: 3px;
+  }
+  .basket__label::after {
+    width: 7px;
+    height: 7px;
+    top: 6px;
+    left: 3px;
+  }
+  .basket__delivery span {
+    padding-left: 20px;
+    font-size: 9px;
+  }
+  .basket__field {
+    width: 100%;
+    padding-right: 0;
+  }
+  .form__message {
+    height: 62px;
+    min-height: 62px;
+    border-radius: 2px;
+  }
+  .basket__total {
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .basket__btn {
+    width: 100%;
+  }
+  .basket__sum {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .basket {
+    padding-bottom: 0;
+  }
+  .basket .title {
+    margin-bottom: 20px;
   }
 }
