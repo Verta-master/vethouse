@@ -183,6 +183,23 @@
   .tabs__name {
     margin-right: 0;
   }
+  .basket__table td:nth-child(2) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .basket__table .card__number {
+    width: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .basket__delivery span,
+  .basket__label {
+    max-width: 750px;
+  }
+  .basket__block--data {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 //---------------------------------------------
@@ -291,6 +308,57 @@
   .news__info {
     width: 100%;
     margin-top: 20px;
+  }
+  .basket__table,
+  .basket__table tbody,
+  .basket__table td {
+    display: block;
+  }
+  .basket__table tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #e6e6e6;
+  }
+  .basket__table td {
+    padding: 0;
+    border-bottom: 0;
+  }
+  .basket__wrap,
+  .basket__table .card__number span {
+    display: block;
+  }
+  .basket__table {
+    td:first-child {
+      order: 1;
+    }
+    td:nth-child(2) {
+      order: 2;
+      width: ~"calc(100% - 180px)";
+    }
+    td:nth-child(3) {
+      order: 4;
+    }
+    td:nth-child(4) {
+      order: 3;
+    }
+    td:nth-child(5) {
+      order: 5;
+    }
+  }
+  .basket__delivery span,
+  .basket__label {
+    max-width: 500px;
+  }
+  .basket__columns {
+    width: 100%;
+  }
+  .basket__total {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -752,5 +820,131 @@
     width: 30px;
     height: 30px;
     font-size: 12px;
+  }
+  .basket__block {
+    width: 100vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .basket__img {
+    width: 100px;
+    height: auto;
+  }
+  .basket__title {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .basket__comment {
+    font-size: 9px;
+  }
+  .basket__table td:nth-child(2) {
+    width: ~"calc(100% - 100px)";
+  }
+  .basket__table tr {
+    position: relative;
+  }
+  .basket__table td:nth-child(5) {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 5;
+  }
+  .basket__remove {
+    width: 25px;
+    height: 25px;
+    background-size: 12px 12px;
+  }
+  .basket__table .card__number {
+    position: static;
+    padding: 0;
+    
+    span {
+      font-size: 9px;
+    }
+    .card__num {
+      width: 22px;
+    }
+    .card__value {
+      width: 35px;
+      font-size: 12px;
+    }
+  }
+  .basket__price {
+    width: 100px;
+    font-size: 20px;
+  }
+  .basket__delivery {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .basket__delivery td:last-child {
+    width: 70px;
+    text-align: right;
+  }
+  .basket__delivery th:last-child {
+    width: 0;
+    font-size: 0;
+  }
+  .basket__delivery td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .basket__delivery th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 0;
+  }
+  .basket__label {
+    padding-left: 20px;
+    
+    &::before {
+      width: 13px;
+      height: 13px;
+      top: 3px;
+    }
+    &::after {
+      width: 7px;
+      height: 7px;
+      top: 6px;
+      left: 3px;
+    }
+  }
+  .basket__delivery span {
+    padding-left: 20px;
+    font-size: 9px;
+  }
+  .basket__field {
+    width: 100%;
+    padding-right: 0;
+  }
+  .form__message {
+    height: 62px;
+    min-height: 62px;
+    border-radius: 2px;
+  }
+  .basket__total {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+  .basket__btn {
+    width: 100%;
+  }
+  .basket__sum {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .basket {
+    padding-bottom: 0;
+  }
+  .basket .title {
+    margin-bottom: 20px;
   }
 }
