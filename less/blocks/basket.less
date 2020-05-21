@@ -5,6 +5,12 @@
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   box-shadow: -1.389px 7.878px 63px 0px rgba(0, 0, 0, 0.1);
+  
+  &--data {
+    padding: 40px 35px;
+    padding-right: 65px;
+    padding-bottom: 15px;
+  }
 }
 
 .basket__table {
@@ -174,4 +180,55 @@
 
 .basket__radio:checked + .basket__label::after {
   display: block;
+}
+
+.basket__subtitle {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: @green;
+}
+
+.basket__field {
+  .reset();
+  border: 0;
+  width: 50%;
+  padding-right: 30px;
+}
+
+.basket__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.basket__columns {
+  width: 630px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.basket__total {
+  width: 400px;
+  max-width: 100%;
+  padding: 40px 30px;
+  border: 2px solid rgb(77, 148, 113);
+  border-radius: 20px;
+  box-shadow: -1.389px 7.878px 63px 0px rgba(0, 0, 0, 0.1);
+}
+
+.basket__sum {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 25px;
+  
+  span {
+    display: block;
+    color: @green;
+    font-weight: 700;
+  }
+}
+
+.basket__btn {
+  
 }
