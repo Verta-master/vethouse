@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper header__wrap">
+        <a href="tel:+78003331124" class="header__phone">8 800 333-11-24</a>
+        <div class="header__user">
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="header__call">Обратный звонок</a>
+          <a href="#" class="header__basket">Корзина <b>(3)</b></a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="header__bottom">
+        <a href="index.html" class="logo">
+          <img src="img/images/logo.png" alt="Logo">
+        </a>
+        <a href="#" class="header__shop">(3)</a>
+        <div class="search">
+          <button type="button" class="search__open"></button>
+          <div class="search__wrap">
+            <form action="#" class="search__form">
+              <input type="text" class="search__input" placeholder="Поиск">
+              <button type="submit" class="search__btn">
+                <svg width="18.219" height="18.218" viewBox="0 0 18.219 18.218">
+                  <path d="M868.022,127.461l-5.293-5.293a7.219,7.219,0,1,0-1.073,1.074l5.292,5.292a0.38,0.38,0,0,0,.537,0l0.537-.537A0.379,0.379,0,0,0,868.022,127.461Zm-10.9-4.129a5.694,5.694,0,1,1,5.693-5.694A5.7,5.7,0,0,1,857.126,123.332Z" transform="translate(-849.906 -110.438)"></path>
+                </svg>
+              </button>
+            </form>
+            <button type="button" class="search__close">Отмена</button>
+          </div>
+        </div>
+        <nav class="menu">
+          <button type="button" class="menu__btn"></button>
+          <div class="menu__wrap">
+            <button type="button" class="menu__close"></button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Каталог</a>
+              </li>
+              <li class="menu__item menu__item--active">
+                <a href="#" class="menu__link">Статьи</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Доставка и оплата</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="menu__mobile">
+              <a href="tel:+78003331124" class="header__phone">8 800 333-11-24</a>
+              <a data-fancybox="" data-src="#call" href="javascript:;" class="header__call">Обратный звонок</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <span class="breadcrumbs__link">Корзина</span>
+      </div>
+    </nav>
+    
+    <section class="basket">
+      <div class="wrapper">
+        <h1 class="title">Корзина</h1>
+        <form action="#" class="basket__form">
+          <div class="basket__block">
+            <table class="basket__table">
+              <tr>
+                <td>
+                  <a href="#" class="basket__img">
+                    <img src="img/images/img-3.jpg" alt="Витамин К1">
+                  </a>
+                </td>
+                <td>
+                  <a href="#" class="basket__title">Витамин К1 Фитоменадион Конакион в таблетках</a>
+                  <span class="basket__comment">100 мг.  60 таблеток</span>
+                </td>
+                <td>
+                  <div class="card__number">
+                    <span>Количество:</span>
+                    <div class="card__nums">
+                      <button type="button" class="card__num card__num--minus">-</button>
+                      <input type="text" class="card__value" value="2">
+                      <button type="button" class="card__num card__num--plus">+</button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="basket__price">9 800 ₽</div>
+                </td>
+                <td>
+                  <button type="button" class="basket__remove" title="Удалить"></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" class="basket__img">
+                    <img src="img/images/img-4.jpg" alt="Витамин К1">
+                  </a>
+                </td>
+                <td>
+                  <a href="#" class="basket__title">Витамин К1 Фитоменадион Конакион</a>
+                  <span class="basket__comment">1 упаковка</span>
+                </td>
+                <td>
+                  <div class="card__number">
+                    <span>Количество:</span>
+                    <div class="card__nums">
+                      <button type="button" class="card__num card__num--minus">-</button>
+                      <input type="text" class="card__value" value="1">
+                      <button type="button" class="card__num card__num--plus">+</button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="basket__price">7 900 ₽</div>
+                </td>
+                <td>
+                  <button type="button" class="basket__remove" title="Удалить"></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" class="basket__img">
+                    <img src="img/images/img-1.jpg" alt="Витамин К1">
+                  </a>
+                </td>
+                <td>
+                  <a href="#" class="basket__title">Витамин К1 Фитоменадион Конакион в таблетках</a>
+                  <span class="basket__comment">1 упаковка</span>
+                </td>
+                <td>
+                  <div class="card__number">
+                    <span>Количество:</span>
+                    <div class="card__nums">
+                      <button type="button" class="card__num card__num--minus">-</button>
+                      <input type="text" class="card__value" value="1">
+                      <button type="button" class="card__num card__num--plus">+</button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="basket__price">4 900 ₽</div>
+                </td>
+                <td>
+                  <button type="button" class="basket__remove" title="Удалить"></button>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="basket__block">
+            <table class="basket__delivery">
+              <tr>
+                <th>Доставка</th>
+                <th>Цена</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="radio1" name="radio" class="basket__radio" checked="">
+                  <label for="radio1" class="basket__label">Доставка в пределах МКАД</label>
+                </td>
+                <td>200 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="radio2" name="radio" class="basket__radio">
+                  <label for="radio2" class="basket__label">Ближнее подмосковье до 20 км (заказы от 3 000 рублей) За пределы  +20 рублей за километр</label>
+                </td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="radio3" name="radio" class="basket__radio">
+                  <label for="radio3" class="basket__label">Ближнее подмосковье до 20 км (заказы до 3 000 рублей) За пределы  +20 рублей за километр</label>
+                </td>
+                <td>500 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="radio4" name="radio" class="basket__radio">
+                  <label for="radio4" class="basket__label">Срочная доставка (в течение 3х часов с момента заказа, при наличии свободного курьера)</label>
+                </td>
+                <td>1000 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="radio5" name="radio" class="basket__radio">
+                  <label for="radio5" class="basket__label">Стоимость отправления Почтой России (1 класс)</label>
+                </td>
+                <td>350 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="radio6" name="radio" class="basket__radio">
+                  <label for="radio6" class="basket__label">Стоимость отправления EMS зависит от удаленности региона</label>
+                  <span>Доставка в другие города РФ и странам СНГ от 350 рублей в зависимости от региона. О стоимости уточняйте у оператора по телефону или по электронной почте.</span>
+                </td>
+                <td>600-900 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="radio7" name="radio" class="basket__radio">
+                  <label for="radio7" class="basket__label">Доставка в Санкт-Петербург осуществляется транспортной компанией (через день после заказа)	</label>
+                </td>
+                <td>250-450 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="radio8" name="radio" class="basket__radio">
+                  <label for="radio8" class="basket__label">Бесплатная доставка по Москве (при заказе на сумму от 5000 рублей)</label>
+                </td>
+                <td>0 руб.</td>
+              </tr>
+            </table>
+          </div>
+        </form>
+        
+        <form action="#" class="basket__form">
+          <div class="basket__block">
+            <p class="basket__title">Данные</p>
+            <div class="basket__wrap">
+              <div class="basket__columns">
+                <fieldset class="basket__field">
+                  <label for="name1" class="form__label">Имя</label>
+                  <input type="text" id="name1" class="form__input">
+                </fieldset>
+                <fieldset class="basket__field">
+                  <label for="surname1" class="form__label">Фамилия</label>
+                  <input type="text" id="surname1" class="form__input">
+                </fieldset>
+                <fieldset class="basket__field">
+                  <label for="tel1" class="form__label">Телефон <span>*</span></label>
+                  <input type="tel" id="tel1" class="form__input">
+                </fieldset>
+                <fieldset class="basket__field">
+                  <label for="email" class="form__label">E-mail <span>*</span></label>
+                  <input type="email" id="email" class="form__input">
+                </fieldset>
+                <fieldset class="basket__field">
+                  <label for="address" class="form__label">Адрес доставки <span>*</span></label>
+                  <textarea id="address" class="form__message"></textarea>
+                </fieldset>
+                <fieldset class="basket__field">
+                  <label for="message" class="form__label">Комментарий <span>*</span></label>
+                  <textarea id="message" class="form__message"></textarea>
+                </fieldset>
+              </div>
+              <div class="basket__total">
+                <p class="basket__price">Итого (с учётом доставки): <span>22 800 руб.</span></p>
+                <button type="submit" class="btn basket__btn">Оформить заказ</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__wrap">
+        <div class="footer__block footer__block--logo">
+          <div class="footer__logo">
+            <img src="img/images/logo-footer.png" alt="Logo">
+          </div>
+          <span class="footer__comment">© 2012 - 2020, “Vet house”<br>Медицинские препараты для животных</span>
+        </div>
+        <div class="footer__block footer__block--menu">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Каталог</a></li>
+            <li class="footer__item"><a href="#">Главная</a></li>
+            <li class="footer__item"><a href="#">Новости</a></li>
+            <li class="footer__item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--faq">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Доставка и оплата</a></li>
+            <li class="footer__item"><a href="#">Отзывы</a></li>
+            <li class="footer__item"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--contacts">
+          <div class="footer__contacts">
+            <a href="tel:+78003331124" class="footer__phone">8 800 333-11-24</a>
+            <a href="mailto:info@vet-house.com" class="footer__mail">info@vet-house.com</a>
+          </div>
+          <address>Адрес: 1117418, г.Москва,<br>ул. Профсоюзная д. 39</address>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Обратный звонок</p>
+    <form action="#" class="form">
+      <label for="name" class="form__label">Имя</label>
+      <input type="text" id="name" class="form__input">
+      <label for="surname" class="form__label">Фамилия</label>
+      <input type="text" id="surname" class="form__input">
+      <label for="tel" class="form__label">Телефон</label>
+      <input type="tel" id="tel" class="form__input">
+      <div class="form__btns">
+        <a href="#" class="form__cancel">Отмена</a>
+        <button type="submit" class="btn form__btn">Отправить</button>
+      </div>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+</body>
+</html>
